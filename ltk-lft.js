@@ -19,13 +19,13 @@ function urlReplace() {
         })
 }
 
-if (document.URL.match("DTK") != null) {
-    try {
-        urlReplace();
-    } catch (error) {
-        console.error("An error occurred:", error.message);
-    }
+// if (document.URL.match("DTK") != null) {
+try {
+    urlReplace();
+} catch (error) {
+    console.error("An error occurred:", error.message);
 }
+// }
 
 function GM_addStyle(cssStr){
 
