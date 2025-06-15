@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         TP LTK: invalid LFT URL replacer
 // @namespace    http://tampermonkey.net/
-// @version      2025-06-15
+// @version      2025-06-15-1
 // @description  try to take over the world!
 // @author       Shiyu Wang
 // @match  https://www.terveysportti.fi/apps/laake/*
