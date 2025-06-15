@@ -2,6 +2,9 @@
 // @name     Terveysportti EasyPrint
 // @match  https://www.ebm-guidelines.com/apps/dtk/ebmg/article/*
 // @match  https://www.terveysportti.fi/apps/*
+// @namespace    http://tampermonkey.net/
+// @version      2025-06-15
+// @author       Shiyu Wang
 // ==/UserScript==
 
 // via https://superuser.com/questions/1337469/grasemonkey-change-design-css

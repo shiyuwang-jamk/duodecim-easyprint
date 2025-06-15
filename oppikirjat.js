@@ -1,7 +1,13 @@
 // ==UserScript==
 // @name     Oppiportti EasyPrint
+// @namespace    http://tampermonkey.net/
+// @version      2025-06-15
+// @description  
+// @author       Shiyu Wang
 // @match  https://www.oppiportti.fi/oppikirjat/*
+// @grant        none
 // ==/UserScript==
+
 
 // via https://superuser.com/questions/1337469/grasemonkey-change-design-css
 function GM_addStyle(cssStr){

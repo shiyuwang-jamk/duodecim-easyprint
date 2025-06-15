@@ -1,8 +1,14 @@
 // ==UserScript==
-// @name     Terveysportti EasyPrint
+// @name         TP LTK: invalid LFT URL replacer
+// @namespace    http://tampermonkey.net/
+// @version      2025-06-15
+// @description  try to take over the world!
+// @author       Shiyu Wang
 // @match  https://www.terveysportti.fi/apps/laake/*
+// @grant        none
 // ==/UserScript==
 
+// TODO: update content within webpage to avoid new page/refresh.
 function urlReplace() {
     const rootURL=document.URL.match(/.*\//)[0];
     document.querySelectorAll('.duo-anchor').forEach(e => {
