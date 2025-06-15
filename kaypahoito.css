@@ -1,0 +1,68 @@
+/* TODO: disable print CSS */
+
+article template,
+article [hidden],
+article div.duo-dfn a.duo-anchor var,
+article div.duo-popup,
+article a.duo-anchor-drug var,
+article a.duo-anchor-plain var,
+article a.duo-anchor-email var,
+article a.duo-anchor-laboratory var,
+article a.duo-anchor-popup var,
+article a.duo-anchor var,
+article a.duo-anchor-reference span,
+article a.duo-anchor-non_indexed span,
+article a.duo-anchor-evidence span,
+article a.duo-anchor-mcmaster span,
+article a.duo-anchor-mcmaster,
+article a.duo-anchor-non_indexed,
+.xdebug-error.xe-notice,
+table.xdebug-error,
+.kh-search-form-desktop,
+#navigation,
+#colophon,
+#sidebar-menu,
+.nav,
+.kh-noprint,
+#kh-article .kh-article-type-hoi .db-hoi .duo-article-header,
+#kh-article .duo-body h1,
+.share-sections,
+.screen-reader-text,
+#suositus .sidebar,
+.duo-exclude,
+.tab-content > .tab-pane,
+.readmore-button ,
+article a.duo-anchor var ,
+article a.duo-table span,
+article a.duo-reference span,
+article a.duo-non_indexed span,
+article a.duo-evidence span,
+article a.duo-mcmaster span,
+article a.duo-mcmaster,
+article a.duo-non_indexed,
+article a.duo-internet var,
+article a.duo-internet span,
+.wt-cli-cookie-bar-container,
+#onetrust-consent-sdk,
+kh-span {
+display: none !important; }
+
+#kh-article,
+.article-container,
+table,
+duo-article-header,
+caption {
+  margin: 0!important
+}
+
+duo-article-header {
+  padding: 0!important
+}
+
+@page {
+  size: landscape;
+}
+
+@media print {
+  * { print-color-adjust: exact!important;}
+}
