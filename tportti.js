@@ -3,7 +3,7 @@
 // @match  https://www.ebm-guidelines.com/apps/dtk/ebmg/article/*
 // @match  https://www.terveysportti.fi/apps/*
 // @namespace    http://tampermonkey.net/
-// @version      2025-06-15
+// @version      2025-06-17
 // @author       Shiyu Wang
 // ==/UserScript==
 
@@ -18,7 +18,8 @@ function GM_addStyle(cssStr){
 
 }
 
-GM_addStyle("@media print {.duo-body {column-count: 2;} table { print-color-adjust: exact!important;}}");
+GM_addStyle("@media print {.duo-body {column-count: 2;}}");
+GM_addStyle("@media print {table { print-color-adjust: exact!important;}}");
 GM_addStyle("@media print {.app-root {margin-top: 24px!important}");
 
 // GM_addStyle("@media print {article img {page-break-inside: avoid;max-height: 95vh!important;max-width: 100%;width: auto!important;}}");
