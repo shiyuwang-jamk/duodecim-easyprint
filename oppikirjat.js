@@ -37,4 +37,5 @@ GM_addStyle("@media print {caption var {page-break-before: always!important}}");
 // no scroll bar
 GM_addStyle("@media print {* {overflow: hidden!important;}}");
 
+GM_addStyle("@media print { @page {size: landscape!important}}");
 // GM_addStyle("@media print {.d-article header .d-database, .d-updated .d-authors {display: none!important}}");
