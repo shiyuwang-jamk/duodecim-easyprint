@@ -1,41 +1,30 @@
 // ==UserScript==
 // @name     Terveysportti EasyPrint
 // @match  https://www.ebm-guidelines.com/apps/dtk/ebmg/article/*
-// @match  https://www.terveysportti.fi/apps/*
-// @exclude  https://www.terveysportti.fi/apps/laake/*
+// @match  https://www.terveysportti.fi/apps/dtk/*/article/*
+// @match        https://www.terveysportti.fi/apps/laake/*/artikkeli
 // @namespace    http://tampermonkey.net/
-// @version      2025-06-17
+// @version      2026-01-23
 // @author       Shiyu Wang
 // ==/UserScript==
 
 // via https://superuser.com/questions/1337469/grasemonkey-change-design-css
 
-function GM_addStyle(cssStr){
-
+function GM_addPrintStyle(cssStr){
     var n = document.createElement('style');
     n.type = "text/css";
-    n.innerHTML = cssStr;
+    n.innerHTML = "@media print {" + cssStr + "}";
     document.getElementsByTagName('head')[0].appendChild(n);
-
 }
 
-GM_addStyle("@media print {.duo-body {column-count: 2;}}");
-GM_addStyle("@media print {table { print-color-adjust: exact!important;}}");
-GM_addStyle("@media print {.app-root {margin-top: 24px!important}");
+GM_addPrintStyle(".duo-body {column-count: 2;}"); // ltk
+GM_addPrintStyle(".dtkbody {column-count: 2;}"); // Lääketietokanta
+GM_addPrintStyle("div.back-on-top {display: none!important;}"); // Lääketietokanta
+GM_addPrintStyle("table { print-color-adjust: exact!important;}");
+GM_addPrintStyle(".app-root {margin-top: 24px!important}");
 
 // GM_addStyle("@media print {article img {page-break-inside: avoid;max-height: 95vh!important;max-width: 100%;width: auto!important;}}");
-// GM_addStyle("@media print {.duo-body img {height: 100%; break-inside: avoid}}");
-GM_addStyle("@media print {div.duo-figure, table {display: none}}");
-
-// no scroll bar
-GM_addStyle("@media print {* {overflow: hidden!important;}}");
-
-GM_addStyle("@media print {.duo-body * {display: none} #printnow {display:block}}");
-
-// width
-GM_addStyle("@media print {div.article-section-container {width: 1200!important}}"); // won't work for KH?
-
-// // KP?
-// if (window.location.href.split('apps/dtk/ltk/article/hoi')[1]) {
-//     GM_addStyle("@media print {.duo-body {width: 1035!impoartant;}}");
-// }
+GM_addPrintStyle(".duo-body img {width: 100%!important}");
+// GM_addStyle("@media print {.article-section-container {width: 1200px!important}}");
+// GM_addStyle("@media print {article * {width: 1200px!important}}"); // CCG in LTK
+GM_addPrintStyle("#article-container, article, #article-section-container {width: 1050px!important"); // CCG in LTK
