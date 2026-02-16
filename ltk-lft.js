@@ -18,7 +18,7 @@ function GM_addStyle(cssStr){
 }
 
 // EasyPrint update
-// div.back-on-top: kts. https://www.terveyskirjasto.fi/uux29592
+// div.back-on-top: kts. https://www.te"rveyskirjasto.fi/uux29592
 GM_addStyle("@media print {.additional-search, div.back-on-top {display: none} * { print-color-adjust: exact!important;}}");
 
 GM_addStyle("@media print {.app-content {margin-top: 0!important}}");
