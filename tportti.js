@@ -127,9 +127,9 @@ window.addEventListener("load", () => {
         childList: true,
         subtree: true
     });
-    window.alert('Upon (re)loading, iteration = ' + onloadIteration
-    + '\nURL changed caugut = ' + urlChange
-    + '\ndocument.title = ' + document.title);
+    // window.alert('Upon (re)loading, iteration = ' + onloadIteration
+    // + '\nURL changed caugut = ' + urlChange
+    // + '\ndocument.title = ' + document.title);
     loadObserver.disconnect();
 });
 // manual trigger for debugging
