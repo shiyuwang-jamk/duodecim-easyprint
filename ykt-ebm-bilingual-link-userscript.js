@@ -2,7 +2,7 @@
 // @name         Bilingual EBMG/LKK article
 // @namespace    http://tampermonkey.net/
 // @version      0.01
-// @description  Send an API request from a userscript
+// @description  Add a button to the sidebar of Finnish Lääkärin Käsikirja article to its English version in EBMG (if applicable)
 // @match        https://www.terveysportti.fi/apps/dtk/ltk/article/*
 // @author       Shiyu Wang
 // ==/UserScript==
@@ -10,7 +10,7 @@
 /*
    CHANGELOG
 
-   v 0.01: basic feature: add a button to the sidebar of Finnish Lääkärin Käsikirja article to its English version in EBMG (if applicable).
+   v 0.01: basic feature.
 */
 /**
  * 
